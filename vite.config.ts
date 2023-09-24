@@ -21,16 +21,9 @@ export default defineConfig(() => {
     },
     resolve: {
       alias: {
-        api: path.resolve('./src/', 'api'),
-        assets: path.resolve('./src/', 'assets'),
-        common: path.resolve('./src/components/', 'common'),
         components: path.resolve('./src/', 'components'),
-        hooks: path.resolve('./src/', 'hooks'),
-        js: path.resolve('./src/', 'js'),
-        src: path.resolve('./', 'src'),
-        views: path.resolve('./src/', 'views'),
-        utils: path.resolve('./src/', 'utils'),
         testUtils: path.resolve('./src/', 'testUtils'),
+        src: path.resolve('./', 'src'),
       },
     },
     plugins: [react(), createHtmlPlugin()],

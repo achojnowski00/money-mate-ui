@@ -14,9 +14,10 @@
     "noEmit": true,
     "target": "ES5",
     "jsx": "react",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "components/*": ["src/components/*"]
+      "components/*": ["components/*"],
+      "testUtils": ["testUtils/index.ts"]
     }
   },
   "include": ["src", "src/env.d.ts", "src/types.d.ts", "**/*.ts", "**/*.tsx"],
